@@ -9,7 +9,7 @@ CheckIsUserBooking.propTypes = {
 export default function CheckIsUserBooking(taiKhoan) {
   const [isUserBooking, setisUserBooking] = useState(true)
   //const url = "https://movie0706.cybersoft.edu.vn/api/QuanLyNguoiDung/ThongTinTaiKhoan"
-  const url = "http://localhost:8090/api/api/QuanLyNguoiDung/ThongTinTaiKhoan"
+  const url = "http://localhost:8090/api/QuanLyNguoiDung/ThongTinTaiKhoan"
   useEffect(() => {
     let cancel = Axios.CancelToken.source(); // Axios cung cấp, để cancel gọi api khi component bị hủy(bấm chuyển cụm rạp khác)
     const loadData = async () => {
